@@ -17,7 +17,7 @@ export default class Jokes extends Component {
     render() {
         return (
             <div className="flexCentre">
-                <h1>Programming Joke</h1>
+                <h1><span>P</span>rogramming <span>J</span>oke</h1>
                 <div className="container">
                     {!this.props.joke && "Loading.."}
                     <p className="p1">{!this.props.joke.setup && "Loading..."}</p>

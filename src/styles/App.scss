@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Lato', 'Arial', 'sans-serif';
+    font-family: 'Lato', 'Arial', 'sans-serif', 'Dancing Script';
 }
 
 body{
@@ -36,6 +36,13 @@ body{
     .p2{
         padding: 1rem;
         font-size: 1.25rem;
+    }
+}
+
+h1{
+    span{
+        color: #5762d1;
+        font-size: 3rem;
     }
 }
 
