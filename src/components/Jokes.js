@@ -18,11 +18,12 @@ export default class Jokes extends Component {
                 <h1>Programming Joke</h1>
                 <div className="container">
                     
-                    {!this.props.joke && ".."}
+                    {!this.props.joke && "Loading.."}
+                    <p className="p1">{!this.props.joke.setup && "Loading..."}</p>
 
                     <p className="p1">{this.props.joke && this.props.joke.setup}</p>
 
-                    <p className="p2">{this.state.punchline ? this.props.joke.punchline : ''}</p>
+                    <p className="p2">{this.state.punchline ? <span> - {this.props.joke.punchline} </span>: ''}</p>
                 </div>
             </div>
         )
