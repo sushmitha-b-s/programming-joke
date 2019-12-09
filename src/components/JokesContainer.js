@@ -10,7 +10,6 @@ class JokesContainer extends Component {
     }
 
     render() {
-        // console.log("joke?", this.props.joke)
         return (
             <div>
                 <Jokes joke={this.props.joke}/>
