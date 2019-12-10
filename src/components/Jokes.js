@@ -14,10 +14,14 @@ export default class Jokes extends Component {
         }, 4500);
     }
 
+    onClick = () => {
+        window.location.reload(false)
+    }
+
     render() {
         return (
             <div className="flexCentre">
-                <h1>Programming Joke</h1>
+                <h1><span>P</span>rogramming <span>J</span>oke</h1>
                 <div className="container">
                     {!this.props.joke && "Loading.."}
                     <p className="p1">{!this.props.joke.setup && "Loading..."}</p>
@@ -37,6 +41,7 @@ export default class Jokes extends Component {
                             round={true}
                             size={40}
                             logoFillColor='#e66465'
+                            className="fb-icon"
                         />
                     </FacebookShareButton>
 
@@ -46,14 +51,22 @@ export default class Jokes extends Component {
                         body={`Setup: ${this.props.joke.setup}\nPunchline: ${this.props.joke.punchline}`}
                         separator=''
                         openWindow={true}
+                        className="email"
                     >
                         <EmailIcon
                             round={true}
                             size={40}
                             logoFillColor='#e66465'
+                            className="email-icon"
                         />
                     </EmailShareButton>
                 </div>
+                <button 
+                    onClick={this.onClick}
+                    className="btn"
+                >
+                    Refresh Page
+                </button>
             </div>
         )
     }
