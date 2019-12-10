@@ -14,6 +14,10 @@ export default class Jokes extends Component {
         }, 4500);
     }
 
+    onClick = () => {
+        window.location.reload(false)
+    }
+
     render() {
         return (
             <div className="flexCentre">
@@ -37,6 +41,7 @@ export default class Jokes extends Component {
                             round={true}
                             size={40}
                             logoFillColor='#e66465'
+                            className="fb-icon"
                         />
                     </FacebookShareButton>
 
@@ -46,14 +51,22 @@ export default class Jokes extends Component {
                         body={`Setup: ${this.props.joke.setup}\nPunchline: ${this.props.joke.punchline}`}
                         separator=''
                         openWindow={true}
+                        className="email"
                     >
                         <EmailIcon
                             round={true}
                             size={40}
                             logoFillColor='#e66465'
+                            className="email-icon"
                         />
                     </EmailShareButton>
                 </div>
+                <button 
+                    onClick={this.onClick}
+                    className="btn"
+                >
+                    Refresh Page
+                </button>
             </div>
         )
     }

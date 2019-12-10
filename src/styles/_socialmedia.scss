@@ -1,0 +1,17 @@
+.social-media{
+    display: flex;
+    position: relative;
+    left: 200px;
+    padding: 1rem;
+    .fb{
+        margin-right: 0.2rem;
+        &:hover, &:focus{
+            @include hoverandfocus();
+        }
+    }
+    .email{
+        &:hover,&:focus{
+            @include hoverandfocus();
+        }
+    }
+}
