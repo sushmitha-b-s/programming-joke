@@ -1,7 +1,6 @@
 .social-media{
     display: flex;
     position: relative;
-    left: 250px;
     padding: 1rem;
     &::before{
         content: 'Share:';
@@ -19,5 +18,10 @@
         &:hover,&:focus{
             @include hoverandfocus();
         }
+    }
+
+
+    @media screen and (min-width: 650px) {
+        left: 250px;
     }
 }
