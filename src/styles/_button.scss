@@ -3,13 +3,13 @@
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 1px;
-    border: 2px solid $white;
-    border-radius: 5px;
+    border: 2px solid $darkblue;
+    border-radius: 7px;
     background-image: linear-gradient(-45deg, $blue, $pink);
-    color: $darkblue;
+    color: $white;
     &:hover,&:focus{
         @include hoverandfocus;
         transform: scale(1.1);
-        color: $white;
+        color: $darkblue;
     }
 }
