@@ -1,8 +1,14 @@
 .social-media{
     display: flex;
     position: relative;
-    left: 200px;
+    left: 250px;
     padding: 1rem;
+    &::before{
+        content: 'Share:';
+        margin-right: 0.5em;
+        font-size: 1.3rem;
+        padding-top: 5px;
+    }
     .fb{
         margin-right: 0.2rem;
         &:hover, &:focus{
