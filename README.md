@@ -2,7 +2,7 @@
 ## [ Check out the deployed version here!](https://sushmitha-randomjoke.netlify.com)
 ## Project Details
 
-This is the simple web app that shows random joke setup and its punchline(after few seconds). It also allows you to share the joke on Facebook and Gmail.(completed in 1-day)
+This is the simple and responsive web-application that shows random joke setup and its punchline(after few seconds). It also allows you to share the joke on Facebook and Gmail.(completed in 1-day)
 
 ## Table of contents:
 
